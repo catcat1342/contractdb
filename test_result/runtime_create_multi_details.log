@@ -1,0 +1,216 @@
+2025/02/14 15:39:19 ni=15
+2025/02/14 15:39:19 create layer index on [name value]
+2025/02/14 15:39:19 runtime for generating queryRes: 0.06 s
+2025/02/14 15:39:25 runtime for generating items0: 5.21 s
+2025/02/14 15:39:52 runtime for computing items0: 27.44 s
+2025/02/14 15:39:53 runtime for writing authDB: 1.34 s, len(datalist)=40921
+
+2025/02/14 15:39:53 setup runtime for test_15 [(name,value)->result]: 34s
+2025/02/14 15:39:53 create layer index on [bank name]
+2025/02/14 15:39:53 runtime for generating queryRes: 0.06 s
+2025/02/14 15:39:59 runtime for generating items0: 5.11 s
+2025/02/14 15:40:01 runtime for computing items0: 2.02 s
+2025/02/14 15:40:01 runtime for writing authDB: 0.78 s, len(datalist)=34699
+
+2025/02/14 15:40:01 setup runtime for test_15 [(name,bank)->result]: 8s
+2025/02/14 15:40:02 create layer index on [bank name value]
+2025/02/14 15:40:02 runtime for generating queryRes: 0.07 s
+2025/02/14 15:40:12 runtime for generating items0: 9.95 s
+2025/02/14 15:40:14 runtime for computing items0: 2.04 s
+2025/02/14 15:40:18 runtime for writing authDB: 4.00 s, len(datalist)=100116
+
+2025/02/14 15:40:18 setup runtime for test_15 [(name,bank,value)->result]: 16s
+2025/02/14 15:40:18 create layer index on [addr bank name]
+2025/02/14 15:40:18 runtime for generating queryRes: 0.10 s
+2025/02/14 15:40:32 runtime for generating items0: 14.21 s
+2025/02/14 15:40:32 runtime for computing items0: 0.16 s
+2025/02/14 15:40:35 runtime for writing authDB: 2.35 s, len(datalist)=94916
+
+2025/02/14 15:40:35 setup runtime for test_15 [(name,bank,addr)->result]: 17s
+2025/02/14 15:40:35 create layer index on [addr bank name value]
+2025/02/14 15:40:35 runtime for generating queryRes: 0.12 s
+2025/02/14 15:40:54 runtime for generating items0: 19.57 s
+2025/02/14 15:40:55 runtime for computing items0: 0.16 s
+2025/02/14 15:41:03 runtime for writing authDB: 8.22 s, len(datalist)=160452
+
+2025/02/14 15:41:03 setup runtime for test_15 [(name,bank,addr,value)->result]: 28s
+2025/02/14 15:41:03 ni=16
+2025/02/14 15:41:03 create layer index on [name value]
+2025/02/14 15:41:03 runtime for generating queryRes: 0.11 s
+2025/02/14 15:41:15 runtime for generating items0: 11.89 s
+2025/02/14 15:41:39 runtime for computing items0: 23.59 s
+2025/02/14 15:41:42 runtime for writing authDB: 3.10 s, len(datalist)=73616
+
+2025/02/14 15:41:42 setup runtime for test_16 [(name,value)->result]: 39s
+2025/02/14 15:41:42 create layer index on [bank name]
+2025/02/14 15:41:42 runtime for generating queryRes: 0.12 s
+2025/02/14 15:41:57 runtime for generating items0: 14.11 s
+2025/02/14 15:41:59 runtime for computing items0: 2.00 s
+2025/02/14 15:42:01 runtime for writing authDB: 2.05 s, len(datalist)=67083
+
+2025/02/14 15:42:01 setup runtime for test_16 [(name,bank)->result]: 18s
+2025/02/14 15:42:01 create layer index on [bank name value]
+2025/02/14 15:42:01 runtime for generating queryRes: 0.18 s
+2025/02/14 15:42:25 runtime for generating items0: 23.81 s
+2025/02/14 15:42:27 runtime for computing items0: 2.21 s
+2025/02/14 15:42:44 runtime for writing authDB: 16.84 s, len(datalist)=197652
+
+2025/02/14 15:42:44 setup runtime for test_16 [(name,bank,value)->result]: 43s
+2025/02/14 15:42:44 create layer index on [addr bank name]
+2025/02/14 15:42:44 runtime for generating queryRes: 0.21 s
+2025/02/14 15:43:23 runtime for generating items0: 39.04 s
+2025/02/14 15:43:24 runtime for computing items0: 0.17 s
+2025/02/14 15:43:33 runtime for writing authDB: 9.37 s, len(datalist)=182101
+
+2025/02/14 15:43:33 setup runtime for test_16 [(name,bank,addr)->result]: 49s
+2025/02/14 15:43:33 create layer index on [addr bank name value]
+2025/02/14 15:43:34 runtime for generating queryRes: 0.25 s
+2025/02/14 15:44:23 runtime for generating items0: 48.95 s
+2025/02/14 15:44:23 runtime for computing items0: 0.17 s
+2025/02/14 15:44:47 runtime for writing authDB: 24.39 s, len(datalist)=313172
+
+2025/02/14 15:44:47 setup runtime for test_16 [(name,bank,addr,value)->result]: 74s
+2025/02/14 15:44:47 ni=17
+2025/02/14 15:44:48 create layer index on [name value]
+2025/02/14 15:44:48 runtime for generating queryRes: 0.23 s
+2025/02/14 15:45:17 runtime for generating items0: 29.42 s
+2025/02/14 15:45:41 runtime for computing items0: 23.44 s
+2025/02/14 15:45:49 runtime for writing authDB: 7.90 s, len(datalist)=138757
+
+2025/02/14 15:45:49 setup runtime for test_17 [(name,value)->result]: 61s
+2025/02/14 15:45:49 create layer index on [bank name]
+2025/02/14 15:45:49 runtime for generating queryRes: 0.19 s
+2025/02/14 15:46:35 runtime for generating items0: 45.28 s
+2025/02/14 15:46:37 runtime for computing items0: 2.21 s
+2025/02/14 15:46:41 runtime for writing authDB: 4.01 s, len(datalist)=131087
+
+2025/02/14 15:46:41 setup runtime for test_17 [(name,bank)->result]: 52s
+2025/02/14 15:46:41 create layer index on [bank name value]
+2025/02/14 15:46:42 runtime for generating queryRes: 0.31 s
+2025/02/14 15:47:46 runtime for generating items0: 64.07 s
+2025/02/14 15:47:48 runtime for computing items0: 2.15 s
+2025/02/14 15:48:36 runtime for writing authDB: 48.08 s, len(datalist)=391196
+
+2025/02/14 15:48:36 setup runtime for test_17 [(name,bank,value)->result]: 115s
+2025/02/14 15:48:36 create layer index on [addr bank name]
+2025/02/14 15:48:37 runtime for generating queryRes: 0.28 s
+2025/02/14 15:50:20 runtime for generating items0: 103.26 s
+2025/02/14 15:50:20 runtime for computing items0: 0.17 s
+2025/02/14 15:50:48 runtime for writing authDB: 28.23 s, len(datalist)=338777
+
+2025/02/14 15:50:48 setup runtime for test_17 [(name,bank,addr)->result]: 132s
+2025/02/14 15:50:49 create layer index on [addr bank name value]
+2025/02/14 15:50:49 runtime for generating queryRes: 0.38 s
+2025/02/14 15:52:54 runtime for generating items0: 124.40 s
+2025/02/14 15:52:54 runtime for computing items0: 0.16 s
+2025/02/14 15:54:27 runtime for writing authDB: 92.92 s, len(datalist)=600912
+
+2025/02/14 15:54:27 setup runtime for test_17 [(name,bank,addr,value)->result]: 218s
+2025/02/14 15:54:27 ni=18
+2025/02/14 15:54:28 create layer index on [name value]
+2025/02/14 15:54:28 runtime for generating queryRes: 0.60 s
+2025/02/14 15:55:52 runtime for generating items0: 83.74 s
+2025/02/14 15:56:15 runtime for computing items0: 23.34 s
+2025/02/14 15:56:51 runtime for writing authDB: 35.89 s, len(datalist)=268317
+
+2025/02/14 15:56:51 setup runtime for test_18 [(name,value)->result]: 144s
+2025/02/14 15:56:52 create layer index on [bank name]
+2025/02/14 15:56:52 runtime for generating queryRes: 0.58 s
+2025/02/14 15:59:22 runtime for generating items0: 149.43 s
+2025/02/14 15:59:24 runtime for computing items0: 2.01 s
+2025/02/14 15:59:42 runtime for writing authDB: 18.45 s, len(datalist)=256137
+
+2025/02/14 15:59:42 setup runtime for test_18 [(name,bank)->result]: 171s
+2025/02/14 15:59:43 create layer index on [bank name value]
+2025/02/14 15:59:44 runtime for generating queryRes: 0.63 s
+2025/02/14 16:02:51 runtime for generating items0: 186.70 s
+2025/02/14 16:02:53 runtime for computing items0: 2.05 s
+2025/02/14 16:05:31 runtime for writing authDB: 158.70 s, len(datalist)=772367
+
+2025/02/14 16:05:32 setup runtime for test_18 [(name,bank,value)->result]: 349s
+2025/02/14 16:05:35 create layer index on [addr bank name]
+2025/02/14 16:05:36 runtime for generating queryRes: 0.67 s
+2025/02/14 16:09:46 runtime for generating items0: 250.37 s
+2025/02/14 16:09:47 runtime for computing items0: 0.18 s
+2025/02/14 16:10:48 runtime for writing authDB: 61.61 s, len(datalist)=593944
+
+2025/02/14 16:10:48 setup runtime for test_18 [(name,bank,addr)->result]: 316s
+2025/02/14 16:10:50 create layer index on [addr bank name value]
+2025/02/14 16:10:51 runtime for generating queryRes: 0.77 s
+2025/02/14 16:15:45 runtime for generating items0: 294.32 s
+2025/02/14 16:15:45 runtime for computing items0: 0.20 s
+2025/02/14 16:19:02 runtime for writing authDB: 196.88 s, len(datalist)=1118194
+
+2025/02/14 16:19:02 setup runtime for test_18 [(name,bank,addr,value)->result]: 493s
+2025/02/14 16:19:02 ni=19
+2025/02/14 16:19:03 create layer index on [name value]
+2025/02/14 16:19:04 runtime for generating queryRes: 0.84 s
+2025/02/14 16:23:33 runtime for generating items0: 268.78 s
+2025/02/14 16:23:56 runtime for computing items0: 23.45 s
+2025/02/14 16:25:25 runtime for writing authDB: 88.66 s, len(datalist)=524373
+
+2025/02/14 16:25:25 setup runtime for test_19 [(name,value)->result]: 382s
+2025/02/14 16:25:27 create layer index on [bank name]
+2025/02/14 16:25:28 runtime for generating queryRes: 0.93 s
+2025/02/14 16:33:39 runtime for generating items0: 491.82 s
+2025/02/14 16:33:41 runtime for computing items0: 2.05 s
+2025/02/14 16:34:29 runtime for writing authDB: 47.99 s, len(datalist)=495081
+
+2025/02/14 16:34:29 setup runtime for test_19 [(name,bank)->result]: 544s
+2025/02/14 16:34:31 create layer index on [bank name value]
+2025/02/14 16:34:32 runtime for generating queryRes: 1.52 s
+2025/02/14 16:43:46 runtime for generating items0: 553.36 s
+2025/02/14 16:43:48 runtime for computing items0: 2.02 s
+2025/02/14 16:49:56 runtime for writing authDB: 368.54 s, len(datalist)=1512394
+
+2025/02/14 16:49:56 setup runtime for test_19 [(name,bank,value)->result]: 926s
+2025/02/14 16:49:58 create layer index on [addr bank name]
+2025/02/14 16:50:00 runtime for generating queryRes: 1.35 s
+2025/02/14 16:57:01 runtime for generating items0: 421.62 s
+2025/02/14 16:57:02 runtime for computing items0: 0.21 s
+2025/02/14 16:59:14 runtime for writing authDB: 132.40 s, len(datalist)=977871
+
+2025/02/14 16:59:14 setup runtime for test_19 [(name,bank,addr)->result]: 557s
+2025/02/14 16:59:17 create layer index on [addr bank name value]
+2025/02/14 16:59:19 runtime for generating queryRes: 1.96 s
+2025/02/14 17:07:49 runtime for generating items0: 510.55 s
+2025/02/14 17:07:50 runtime for computing items0: 0.86 s
+2025/02/14 17:20:15 runtime for writing authDB: 744.37 s, len(datalist)=2026338
+
+2025/02/14 17:20:15 setup runtime for test_19 [(name,bank,addr,value)->result]: 1260s
+2025/02/14 17:20:15 ni=20
+2025/02/14 17:20:21 create layer index on [name value]
+2025/02/14 17:20:23 runtime for generating queryRes: 2.23 s
+2025/02/14 17:35:07 runtime for generating items0: 883.96 s
+2025/02/14 17:35:30 runtime for computing items0: 23.08 s
+2025/02/14 17:39:04 runtime for writing authDB: 213.51 s, len(datalist)=1024792
+
+2025/02/14 17:39:04 setup runtime for test_20 [(name,value)->result]: 1129s
+2025/02/14 17:39:08 create layer index on [bank name]
+2025/02/14 17:39:10 runtime for generating queryRes: 2.05 s
+2025/02/14 18:04:55 runtime for generating items0: 1545.69 s
+2025/02/14 18:04:58 runtime for computing items0: 2.12 s
+2025/02/14 18:07:38 runtime for writing authDB: 160.29 s, len(datalist)=930036
+
+2025/02/14 18:07:38 setup runtime for test_20 [(name,bank)->result]: 1713s
+2025/02/14 18:07:41 create layer index on [bank name value]
+2025/02/14 18:07:44 runtime for generating queryRes: 2.53 s
+2025/02/14 18:35:23 runtime for generating items0: 1659.22 s
+2025/02/14 18:35:25 runtime for computing items0: 1.94 s
+2025/02/14 18:51:09 runtime for writing authDB: 944.70 s, len(datalist)=2906564
+
+2025/02/14 18:51:09 setup runtime for test_20 [(name,bank,value)->result]: 2611s
+2025/02/14 18:51:14 create layer index on [addr bank name]
+2025/02/14 18:51:18 runtime for generating queryRes: 4.11 s
+2025/02/14 19:01:44 runtime for generating items0: 625.55 s
+2025/02/14 19:01:44 runtime for computing items0: 0.24 s
+2025/02/14 19:09:26 runtime for writing authDB: 461.53 s, len(datalist)=1563069
+
+2025/02/14 19:09:26 setup runtime for test_20 [(name,bank,addr)->result]: 1096s
+2025/02/14 19:09:30 create layer index on [addr bank name value]
+2025/02/14 19:09:38 runtime for generating queryRes: 7.85 s
+2025/02/14 19:24:55 runtime for generating items0: 917.16 s
+2025/02/14 19:24:56 runtime for computing items0: 0.37 s
+2025/02/14 20:15:54 runtime for writing authDB: 3058.48 s, len(datalist)=3659716
+
+2025/02/14 20:15:55 setup runtime for test_20 [(name,bank,addr,value)->result]: 3989s

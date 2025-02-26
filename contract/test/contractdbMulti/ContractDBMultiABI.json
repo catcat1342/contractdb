@@ -1,0 +1,840 @@
+[
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "success",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "result",
+          "type": "uint256"
+        }
+      ],
+      "name": "TestGas2Result",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "index",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8[]",
+              "name": "rtype",
+              "type": "uint8[]"
+            },
+            {
+              "internalType": "uint64[]",
+              "name": "eval",
+              "type": "uint64[]"
+            },
+            {
+              "internalType": "uint64[]",
+              "name": "rval",
+              "type": "uint64[]"
+            }
+          ],
+          "internalType": "struct ContractDBMulti.QueryMulti",
+          "name": "q",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "sum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "a0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "a1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "a0inv",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point",
+              "name": "fR",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point",
+              "name": "w1",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point",
+              "name": "w2",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint64",
+                  "name": "key",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "nxt",
+                  "type": "uint64"
+                },
+                {
+                  "components": [
+                    {
+                      "internalType": "uint256",
+                      "name": "X",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "Y",
+                      "type": "uint256"
+                    }
+                  ],
+                  "internalType": "struct ContractDBMulti.G1Point",
+                  "name": "value",
+                  "type": "tuple"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.DicItemE[]",
+              "name": "itemE",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint64",
+                  "name": "key",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "nxt",
+                  "type": "uint64"
+                },
+                {
+                  "components": [
+                    {
+                      "internalType": "uint256[2]",
+                      "name": "X",
+                      "type": "uint256[2]"
+                    },
+                    {
+                      "internalType": "uint256[2]",
+                      "name": "Y",
+                      "type": "uint256[2]"
+                    }
+                  ],
+                  "internalType": "struct ContractDBMulti.G2Point",
+                  "name": "value",
+                  "type": "tuple"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.DicItemR[]",
+              "name": "itemR",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "itemInv",
+              "type": "uint256[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256[2]",
+                  "name": "X",
+                  "type": "uint256[2]"
+                },
+                {
+                  "internalType": "uint256[2]",
+                  "name": "Y",
+                  "type": "uint256[2]"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G2Point[]",
+              "name": "itemWit",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point[]",
+              "name": "iset",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point[]",
+              "name": "igcd",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256[2]",
+                  "name": "X",
+                  "type": "uint256[2]"
+                },
+                {
+                  "internalType": "uint256[2]",
+                  "name": "Y",
+                  "type": "uint256[2]"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G2Point[]",
+              "name": "iwit",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct ContractDBMulti.VerifySumParam",
+          "name": "param",
+          "type": "tuple"
+        }
+      ],
+      "name": "VerifyQueryMulti",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "ver",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "flag",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [],
+      "name": "TestGas0Multi",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "index",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8[]",
+              "name": "rtype",
+              "type": "uint8[]"
+            },
+            {
+              "internalType": "uint64[]",
+              "name": "eval",
+              "type": "uint64[]"
+            },
+            {
+              "internalType": "uint64[]",
+              "name": "rval",
+              "type": "uint64[]"
+            }
+          ],
+          "internalType": "struct ContractDBMulti.QueryMulti",
+          "name": "q",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "sum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "a0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "a1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "a0inv",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point",
+              "name": "fR",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point",
+              "name": "w1",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point",
+              "name": "w2",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint64",
+                  "name": "key",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "nxt",
+                  "type": "uint64"
+                },
+                {
+                  "components": [
+                    {
+                      "internalType": "uint256",
+                      "name": "X",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "Y",
+                      "type": "uint256"
+                    }
+                  ],
+                  "internalType": "struct ContractDBMulti.G1Point",
+                  "name": "value",
+                  "type": "tuple"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.DicItemE[]",
+              "name": "itemE",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint64",
+                  "name": "key",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "nxt",
+                  "type": "uint64"
+                },
+                {
+                  "components": [
+                    {
+                      "internalType": "uint256[2]",
+                      "name": "X",
+                      "type": "uint256[2]"
+                    },
+                    {
+                      "internalType": "uint256[2]",
+                      "name": "Y",
+                      "type": "uint256[2]"
+                    }
+                  ],
+                  "internalType": "struct ContractDBMulti.G2Point",
+                  "name": "value",
+                  "type": "tuple"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.DicItemR[]",
+              "name": "itemR",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "itemInv",
+              "type": "uint256[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256[2]",
+                  "name": "X",
+                  "type": "uint256[2]"
+                },
+                {
+                  "internalType": "uint256[2]",
+                  "name": "Y",
+                  "type": "uint256[2]"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G2Point[]",
+              "name": "itemWit",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point[]",
+              "name": "iset",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point[]",
+              "name": "igcd",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256[2]",
+                  "name": "X",
+                  "type": "uint256[2]"
+                },
+                {
+                  "internalType": "uint256[2]",
+                  "name": "Y",
+                  "type": "uint256[2]"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G2Point[]",
+              "name": "iwit",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct ContractDBMulti.VerifySumParam",
+          "name": "param",
+          "type": "tuple"
+        }
+      ],
+      "name": "TestGas1Multi",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint8",
+              "name": "index",
+              "type": "uint8"
+            },
+            {
+              "internalType": "uint8[]",
+              "name": "rtype",
+              "type": "uint8[]"
+            },
+            {
+              "internalType": "uint64[]",
+              "name": "eval",
+              "type": "uint64[]"
+            },
+            {
+              "internalType": "uint64[]",
+              "name": "rval",
+              "type": "uint64[]"
+            }
+          ],
+          "internalType": "struct ContractDBMulti.QueryMulti",
+          "name": "q",
+          "type": "tuple"
+        },
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "sum",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "a0",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "a1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "a0inv",
+              "type": "uint256"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point",
+              "name": "fR",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point",
+              "name": "w1",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point",
+              "name": "w2",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint64",
+                  "name": "key",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "nxt",
+                  "type": "uint64"
+                },
+                {
+                  "components": [
+                    {
+                      "internalType": "uint256",
+                      "name": "X",
+                      "type": "uint256"
+                    },
+                    {
+                      "internalType": "uint256",
+                      "name": "Y",
+                      "type": "uint256"
+                    }
+                  ],
+                  "internalType": "struct ContractDBMulti.G1Point",
+                  "name": "value",
+                  "type": "tuple"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.DicItemE[]",
+              "name": "itemE",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint64",
+                  "name": "key",
+                  "type": "uint64"
+                },
+                {
+                  "internalType": "uint64",
+                  "name": "nxt",
+                  "type": "uint64"
+                },
+                {
+                  "components": [
+                    {
+                      "internalType": "uint256[2]",
+                      "name": "X",
+                      "type": "uint256[2]"
+                    },
+                    {
+                      "internalType": "uint256[2]",
+                      "name": "Y",
+                      "type": "uint256[2]"
+                    }
+                  ],
+                  "internalType": "struct ContractDBMulti.G2Point",
+                  "name": "value",
+                  "type": "tuple"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.DicItemR[]",
+              "name": "itemR",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "itemInv",
+              "type": "uint256[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256[2]",
+                  "name": "X",
+                  "type": "uint256[2]"
+                },
+                {
+                  "internalType": "uint256[2]",
+                  "name": "Y",
+                  "type": "uint256[2]"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G2Point[]",
+              "name": "itemWit",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point[]",
+              "name": "iset",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "X",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "Y",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G1Point[]",
+              "name": "igcd",
+              "type": "tuple[]"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256[2]",
+                  "name": "X",
+                  "type": "uint256[2]"
+                },
+                {
+                  "internalType": "uint256[2]",
+                  "name": "Y",
+                  "type": "uint256[2]"
+                }
+              ],
+              "internalType": "struct ContractDBMulti.G2Point[]",
+              "name": "iwit",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct ContractDBMulti.VerifySumParam",
+          "name": "param",
+          "type": "tuple"
+        }
+      ],
+      "name": "TestGas2Multi",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "ver",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "flag",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]

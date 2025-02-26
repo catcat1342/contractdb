@@ -1,0 +1,36 @@
+2025/02/14 15:39:19 ni=15
+2025/02/14 15:39:53 setup runtime for test_15 [(name,value)->result]: 34s
+2025/02/14 15:40:01 setup runtime for test_15 [(name,bank)->result]: 8s
+2025/02/14 15:40:18 setup runtime for test_15 [(name,bank,value)->result]: 16s
+2025/02/14 15:40:35 setup runtime for test_15 [(name,bank,addr)->result]: 17s
+2025/02/14 15:41:03 setup runtime for test_15 [(name,bank,addr,value)->result]: 28s
+2025/02/14 15:41:03 ni=16
+2025/02/14 15:41:42 setup runtime for test_16 [(name,value)->result]: 39s
+2025/02/14 15:42:01 setup runtime for test_16 [(name,bank)->result]: 18s
+2025/02/14 15:42:44 setup runtime for test_16 [(name,bank,value)->result]: 43s
+2025/02/14 15:43:33 setup runtime for test_16 [(name,bank,addr)->result]: 49s
+2025/02/14 15:44:47 setup runtime for test_16 [(name,bank,addr,value)->result]: 74s
+2025/02/14 15:44:47 ni=17
+2025/02/14 15:45:49 setup runtime for test_17 [(name,value)->result]: 61s
+2025/02/14 15:46:41 setup runtime for test_17 [(name,bank)->result]: 52s
+2025/02/14 15:48:36 setup runtime for test_17 [(name,bank,value)->result]: 115s
+2025/02/14 15:50:48 setup runtime for test_17 [(name,bank,addr)->result]: 132s
+2025/02/14 15:54:27 setup runtime for test_17 [(name,bank,addr,value)->result]: 218s
+2025/02/14 15:54:27 ni=18
+2025/02/14 15:56:51 setup runtime for test_18 [(name,value)->result]: 144s
+2025/02/14 15:59:42 setup runtime for test_18 [(name,bank)->result]: 171s
+2025/02/14 16:05:31 setup runtime for test_18 [(name,bank,value)->result]: 349s
+2025/02/14 16:10:48 setup runtime for test_18 [(name,bank,addr)->result]: 316s
+2025/02/14 16:19:02 setup runtime for test_18 [(name,bank,addr,value)->result]: 493s
+2025/02/14 16:19:02 ni=19
+2025/02/14 16:25:25 setup runtime for test_19 [(name,value)->result]: 382s
+2025/02/14 16:34:29 setup runtime for test_19 [(name,bank)->result]: 544s
+2025/02/14 16:49:56 setup runtime for test_19 [(name,bank,value)->result]: 926s
+2025/02/14 16:59:14 setup runtime for test_19 [(name,bank,addr)->result]: 557s
+2025/02/14 17:20:15 setup runtime for test_19 [(name,bank,addr,value)->result]: 1260s
+2025/02/14 17:20:15 ni=20
+2025/02/14 17:39:04 setup runtime for test_20 [(name,value)->result]: 1129s
+2025/02/14 18:07:38 setup runtime for test_20 [(name,bank)->result]: 1713s
+2025/02/14 18:51:09 setup runtime for test_20 [(name,bank,value)->result]: 2611s
+2025/02/14 19:09:26 setup runtime for test_20 [(name,bank,addr)->result]: 1096s
+2025/02/14 20:15:55 setup runtime for test_20 [(name,bank,addr,value)->result]: 3989s

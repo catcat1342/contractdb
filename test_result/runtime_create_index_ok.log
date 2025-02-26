@@ -1,0 +1,42 @@
+2025/02/06 18:25:06 ni=15
+2025/02/06 18:25:10 setup runtime for test_15 [addr->result] (eq 1<<8): 2s
+2025/02/06 18:25:15 setup runtime for test_15 [bank->result] (eq 1<<10): 4s
+2025/02/06 18:25:59 setup runtime for test_15 [name->result] (eq 1<<12): 44s
+2025/02/06 18:26:05 setup runtime for test_15 [grade->result] (range 1<<8): 6s
+2025/02/06 18:26:23 setup runtime for test_15 [rate->result] (range 1<<10): 17s
+2025/02/06 18:28:04 setup runtime for test_15 [value->result] (range 1<<12): 101s
+2025/02/06 18:28:04 ni=16
+2025/02/06 18:28:08 setup runtime for test_16 [addr->result] (eq 1<<8): 2s
+2025/02/06 18:28:13 setup runtime for test_16 [bank->result] (eq 1<<10): 4s
+2025/02/06 18:28:55 setup runtime for test_16 [name->result] (eq 1<<12): 44s
+2025/02/06 18:29:04 setup runtime for test_16 [grade->result] (range 1<<8): 9s
+2025/02/06 18:29:45 setup runtime for test_16 [rate->result] (range 1<<10): 40s
+2025/02/06 18:32:18 setup runtime for test_16 [value->result] (range 1<<12): 152s
+2025/02/06 18:32:18 ni=17
+2025/02/06 18:32:32 setup runtime for test_17 [addr->result] (eq 1<<8): 2s
+2025/02/06 18:32:36 setup runtime for test_17 [bank->result] (eq 1<<10): 4s
+2025/02/06 18:33:18 setup runtime for test_17 [name->result] (eq 1<<12): 43s
+2025/02/06 18:33:34 setup runtime for test_17 [grade->result] (range 1<<8): 16s
+2025/02/06 18:34:27 setup runtime for test_17 [rate->result] (range 1<<10): 52s
+2025/02/06 18:38:38 setup runtime for test_17 [value->result] (range 1<<12): 251s
+2025/02/06 18:38:38 ni=18
+2025/02/06 18:38:46 setup runtime for test_18 [addr->result] (eq 1<<8): 3s
+2025/02/06 18:38:51 setup runtime for test_18 [bank->result] (eq 1<<10): 5s
+2025/02/06 18:39:33 setup runtime for test_18 [name->result] (eq 1<<12): 44s
+2025/02/06 18:40:09 setup runtime for test_18 [grade->result] (range 1<<8): 36s
+2025/02/06 18:42:58 setup runtime for test_18 [rate->result] (range 1<<10): 169s
+2025/02/06 18:53:20 setup runtime for test_18 [value->result] (range 1<<12): 621s
+2025/02/06 18:53:20 ni=19
+2025/02/06 18:54:42 setup runtime for test_19 [addr->result] (eq 1<<8): 4s
+2025/02/06 18:54:49 setup runtime for test_19 [bank->result] (eq 1<<10): 6s
+2025/02/06 18:55:33 setup runtime for test_19 [name->result] (eq 1<<12): 45s
+2025/02/06 18:59:50 setup runtime for test_19 [grade->result] (range 1<<8): 257s
+2025/02/06 19:11:23 setup runtime for test_19 [rate->result] (range 1<<10): 692s
+2025/02/06 20:05:52 setup runtime for test_19 [value->result] (range 1<<12): 3269s
+2025/02/06 20:05:52 ni=20
+2025/02/06 20:08:10 setup runtime for test_20 [addr->result] (eq 1<<8): 5s
+2025/02/06 20:08:20 setup runtime for test_20 [bank->result] (eq 1<<10): 7s
+2025/02/06 20:09:09 setup runtime for test_20 [name->result] (eq 1<<12): 47s
+2025/02/06 20:18:53 setup runtime for test_20 [grade->result] (range 1<<8): 584s
+2025/02/06 20:45:21 setup runtime for test_20 [rate->result] (range 1<<10): 1587s
+2025/02/06 22:08:52 setup runtime for test_20 [value->result] (range 1<<12): 5011s
