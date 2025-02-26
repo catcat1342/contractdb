@@ -394,12 +394,3 @@ func (p *Poly) BuildFromRoots(a fr.Vector) *Poly {
 
 	return p
 }
-
-// func printVector(v fr.Vector) string {
-// 	res := ""
-// 	for i := 0; i < v.Len()-1; i++ {
-// 		res += fmt.Sprintf("%v, ", v[i].String())
-// 	}
-// 	res += v[v.Len()-1].String()
-// 	return res
-// }

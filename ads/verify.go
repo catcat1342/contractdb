@@ -251,32 +251,3 @@ func getDigest(ind IndexInfo) (bn.G1Affine, error) {
 	}
 	return acc.StringToG1Affine(string(val)), nil
 }
-
-// get digest from database
-// the GetDigest func first gets the index from q
-// then it gets the digest of the index from the corresponding auth_table
-// func getDigest1c1dSQL(db *sql.DB, q Query, c int) (bn.G1Affine, error) {
-// 	// auth table: table_index_dest, digest is in the first line
-// 	ind := &IndexInfo{q.Table, q.Cond[c : c+1], q.Dest, q.DestType}
-// 	authtable := ind.authTable()
-// 	if CheckTableExist(db, []string{authtable}) {
-// 		authQuery := fmt.Sprintf("SELECT digestX,digestY FROM %v WHERE hkey=%v", authtable, acc.INF.Uint64())
-// 		//authQuery := "SELECT digestX,digestY FROM " + authtable + " WHERE hkey=\"0\";"
-// 		var dx, dy []byte
-// 		rows, err := db.Query(authQuery)
-// 		if err != nil {
-// 			return bn.G1Affine{}, err
-// 		}
-// 		rows.Next()
-// 		err = rows.Scan(&dx, &dy)
-// 		if err != nil {
-// 			return bn.G1Affine{}, fmt.Errorf("error scanning row: %v", err)
-// 		}
-// 		digest := bn.G1Affine{}
-// 		digest.X.SetBytes(dx)
-// 		digest.Y.SetBytes(dy)
-// 		return digest, nil
-// 	} else {
-// 		return bn.G1Affine{}, fmt.Errorf("1c1d index not exist")
-// 	}
-// }
