@@ -81,8 +81,16 @@ const accountAddr = "fa2a7eeeac24d706f4b925430f9e8025ef5fd0c6c9fc5ca6e3e48f6dbb7
 
 ### 2. deploy contracts
 
-Navigate to the contract directory:
-cd contractdb/contract, then run `truffle migrate --reset` to compile and deploy the contracts.
+Before deploying the contracts, please modify the constructor parameters of both contracts (`ContractDB.sol`, `ContractDBMulti.sol`). The constructor parameters consist of index digests. We provide a function to obtain them in the following directories:
+- `contractdb/contract/test/contractdb`
+- `contractdb/contract/test/contractdbMulti`
+
+For instance, navigate to the directory `contractdb/contract/test/contractdb` and run:
+`go test -v -run ^TestGetDigests$` to get the constructor parameters for `ContractDB.sol`.
+
+In addition, if you change the private key `s`, the public keys (`sG1` and `sG2`) stored in contracts should also be changed. 
+
+To deploy contracts, navigate to the contract directory contractdb/contract and run `truffle migrate --reset` to compile and deploy the contracts.
 
 The deployment will output three contract addresses. Record the addresses of ContractDB and ContractDBMulti in the following files:
 
