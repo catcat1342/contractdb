@@ -105,7 +105,7 @@ Navigate to the directory:
 `cd test/contractdb`, then run `go test -v -run ^TestContract$`.
 
 Alternatively, you can navigate to:
-`cd test/contractdbMulti` and run `go test -v -run ^TestContract$`.
+`cd test/contractdbMulti` and run `go test -v -run ^TestContractMulti$`.
 
 The `TestContract` function sends three invocations that separately call `TestGas0`, `TestGas1`, and `TestGas2` in the contract.
 
