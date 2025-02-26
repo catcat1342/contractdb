@@ -18,7 +18,7 @@ Ethereum only supports key-value queries (using the map data structure). However
 
 **Step 1: Verifiable Database (VDB) & Smart Contract.** We combine VDB with smart contracts, allowing us to store data in an external database and provide the required data for each invocation along with the invocation input. The smart contract can verify the provided data based on VDB technology.
 
-**Step 2: VDB with Constant Proof Size.** Currently, existing VDB schemes require O(log N) proof size, where N is the number of data items (or the line number of the database table).
+**Step 2: VDB with efficient verification and public verifiable update.** Currently, existing VDB schemes require O(k log N) proof size, where N is the number of data items (or the number of rows in the database table). Additionally, they do not support publicly verifiable updates and thus cannot be directly adopted in our scheme. Our VDB construction achieves publicly verifiable updates and O(k) verification cost.
 
 ## II. Implementation framework
 
