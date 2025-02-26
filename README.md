@@ -1,4 +1,4 @@
-# ContractDB: Enabling Secure and Efficient Database Accessing in Smart Contracts
+# ContractDB: Secure and Efficient Integration of Large Legacy Data with Blockchain DApps using External Databases
 
 ## I. Introduction
 
