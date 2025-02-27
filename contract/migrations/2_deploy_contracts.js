@@ -1,4 +1,4 @@
-//const ContractDB = artifacts.require("ContractDB");
+const ContractDB = artifacts.require("ContractDB");
 const ContractDBMulti = artifacts.require("ContractDBMulti")
 
 module.exports = function (deployer) {
