@@ -115,6 +115,8 @@ Navigate to the directory:
 Alternatively, you can navigate to:
 `cd test/contractdbMulti` and run `go test -v -run ^TestContractMulti$`.
 
+Please note that before running the above functions, you should modify the query conditions (in `contract_test.go` and `contract_multi_test.go`) to ensure that the result set is non-empty, as we currently have not implemented the verification of an empty result in the contracts. (Such a function is provided by the ads package, and we may add it to the contracts later.)
+
 The `TestContract` function sends three invocations that separately call `TestGas0`, `TestGas1`, and `TestGas2` in the contract.
 
 - `TestGas0` evaluates the basic gas cost of modifying a storage slot in the contract.
